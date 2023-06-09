@@ -1,0 +1,237 @@
+/*google font api*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2;
+  text-align: center;
+}
+
+.row .content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.row .content .gender .form-check-label {
+  font-size: 16px;
+}
+.row .content .height select,
+.row .content .weight select {
+  font-weight: 800;
+}
+
+.calculate button {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+.result-body h3 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.OverallBMI {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.BMIValue {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.BMIValue p {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.2;
+  font-weight: 300;
+}
+
+.userInput p {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2;
+}
+
+.firstContent {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5;
+}
+
+.defaultContent ul li {
+  font-family: "Inter", sans-serif;
+}
+.defaultContent p {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2;
+}
+
+.secondContent p {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5;
+}
+.secondContent .secondContent1 ul li {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5;
+}
+.secondContent h3 {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .h1 {
+  margin-top: 1rem;
+  color: rgb(24, 24, 139);
+}
+
+.container .row {
+  padding: 1rem;
+}
+.container .row .image {
+  text-align: center;
+}
+.container .row .content {
+  padding: 2rem;
+  margin: 0 auto;
+}
+.container .row .content h2 {
+  color: rgb(24, 24, 139);
+}
+.container .row .content .gender,
+.container .row .content .age,
+.container .row .content .height,
+.container .row .content .weight {
+  margin: 2rem 0;
+}
+.container .row .content .age input,
+.container .row .content .height input,
+.container .row .content .weight input,
+.container .row .content .gender input {
+  background-color: #e6e6e6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container .row .content .age input,
+.container .row .content .height input,
+.container .row .content .weight input {
+  max-width: 30%;
+}
+.container .row .content .height select,
+.container .row .content .weight select {
+  max-width: 20%;
+  margin-left: 5rem;
+  color: rgb(24, 24, 139);
+  border: none;
+  /* background-color: #7b74f9; */
+}
+.container .row .content .height .height-box,
+.container .row .content .weight .weight-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.calculate {
+  text-align: center;
+}
+.calculate button {
+  background-color: rgb(24, 24, 139);
+}
+.calculate button:hover {
+  background-color: #e6e6e6;
+  color: rgb(24, 24, 139);
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition-duration: 1s;
+}
+
+#result {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.result-body h3 {
+  color: rgb(24, 24, 139);
+  margin-top: 2rem;
+}
+
+.OverallBMI {
+  margin: 2rem 0 0.5rem 0;
+  color: rgb(5, 123, 3);
+}
+
+.BMIValue {
+  margin-bottom: 2rem;
+  color: rgb(5, 123, 3);
+}
+.BMIValue p {
+  color: rgb(72, 128, 71);
+}
+
+.userInput {
+  margin: 2rem 0;
+}
+.userInput p {
+  margin: 5px 0;
+  color: rgb(24, 24, 139);
+}
+
+.firstContent {
+  margin: 1rem auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.defaultContent {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(24, 24, 139);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.defaultContent ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+.defaultContent p {
+  margin: 0 0 1rem 0;
+  color: rgb(24, 24, 139);
+}
+
+.secondContent {
+  margin-top: 4rem;
+}
+.secondContent p {
+  margin: 1rem auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: #4a4848;
+}
+.secondContent .secondContent1 ul li {
+  color: #4a4848;
+}
+.secondContent h3 {
+  color: rgb(24, 24, 139);
+  margin-top: 3rem;
+}
+
+.love {
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}/*# sourceMappingURL=style.css.map */

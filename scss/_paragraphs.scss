@@ -1,0 +1,46 @@
+.firstContent {
+    margin: 1rem auto;
+    max-width: max-content;
+}
+
+.defaultContent {
+    max-width: max-content;
+    padding: 1rem 2rem;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    ul li {
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    p {
+        margin: 0 0 1rem 0;
+        color: $primary-color;
+    }
+}
+
+.secondContent {
+    margin-top: 4rem;
+
+    p {
+        margin: 1rem auto;
+        max-width: max-content;
+        color: $paragraph-color;
+    }
+
+    .secondContent1 ul li {
+        color: $paragraph-color;
+    }
+
+    h3 {
+        color: $primary-color;
+        margin-top: 3rem;
+    }
+}
+
+.love {
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}

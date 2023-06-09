@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    .h1 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        @include text(('Inter', sans-serif), 2);
+        text-align: center;
+    }
+}
+
+.row .content {
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .gender .form-check-label {
+        font-size: 16px;
+    }
+
+    .height select,
+    .weight select {
+        font-weight: 800;
+    }
+}
+
+.calculate {
+    button {
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+.result-body h3 {
+    @include text(('Inter', sans-serif), 2);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.OverallBMI {
+    @include text(('Inter', sans-serif), 2);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.BMIValue {
+    @include text(('Inter', sans-serif), 2);
+    font-weight: 800;
+    text-transform: uppercase;
+
+    p {
+        font-size: 14px;
+        @include text(('Inter', sans-serif), 1.2);
+        font-weight: 300;
+    }
+}
+
+.userInput {
+    p {
+        @include text(('Inter', sans-serif), 2);
+    }
+}
+
+.firstContent {
+    text-align: center;
+    @include text(('Inter', sans-serif), 1.5);
+}
+
+.defaultContent {
+
+    ul li {
+        font-family: 'Inter', sans-serif;
+    }
+
+    p {
+        text-transform: uppercase;
+        @include text(('Inter', sans-serif), 2);
+    }
+}
+
+.secondContent {
+
+    p {
+        @include text(('Inter', sans-serif), 1.5);
+    }
+
+    .secondContent1 ul li {
+        @include text(('Inter', sans-serif), 1.5);
+    }
+
+    h3 {
+        @include text(('Inter', sans-serif), 1.5);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,14 @@
+.calculate {
+    text-align: center;
+
+    button {
+        background-color: $primary-color;
+    }
+
+    button:hover {
+        background-color: $tertiary-color;
+        color: $primary-color;
+        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        transition-duration: 1s;
+    }
+}

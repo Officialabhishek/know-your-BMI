@@ -1,0 +1,32 @@
+#result {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.result-body h3 {
+    color: $primary-color;
+    margin-top: 2rem;
+}
+
+.OverallBMI {
+    margin: 2rem 0 0.5rem 0;
+    color: $secondary1-color;
+}
+
+.BMIValue {
+    margin-bottom: 2rem;
+    color: $secondary1-color;
+
+    p {
+        color: $secondary2-color;
+    }
+}
+
+.userInput {
+    margin: 2rem 0;
+
+    p {
+        margin: 5px 0;
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your BMI</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <!-- Bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="h1">Know your BMI Score</h1>
+        <p class="firstContent">Body mass index (BMI) estimates body fat. Your BMI is based on your height and weight.
+            When you enter your height and weight into a BMI calculator, you'll get a number. That number is one way to
+            gauge if you have a healthy or unhealthy weight.</p>
+
+        <!-- User input section starts here -->
+
+        <div class="row">
+            <div class="col-md-6 image">
+                <img src="./svg/man.svg" alt="" srcset="">
+            </div>
+            <div class="col-md-6 content">
+                <div class="gender">
+                    <h2>Gender</h2>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="Female">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="Prefer_not_to_say">
+                        <label class="form-check-label" for="inlineRadio3">Prefer not to say</label>
+                    </div>
+                </div>
+                <div class="age">
+                    <h2>Age</h2>
+                    <input type="text" id="age" class="form-control" placeholder="Your age" aria-label="Age">
+                </div>
+                <div class="height">
+                    <div class="height-box">
+                        <h2>Height</h2>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option class="optionValue1" value="cm" selected> in cm</option>
+                            <option class="optionValue1" value="m" disabled>m</option>
+                        </select>
+                    </div>
+                    <input type="text" id="height" class="input-height form-control" placeholder="Your height"
+                        aria-label="Height">
+                </div>
+                <div class="weight">
+                    <div class="weight-box">
+                        <h2>Weight</h2>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option class="optionValue2" value="lbs" disabled>lbs</option>
+                            <option class="optionValue2" value="kg" selected> in kg</option>
+                        </select>
+                    </div>
+                    <input type="text" id="weight" class="input-weight form-control" placeholder="Your weight"
+                        aria-label="Weight">
+                </div>
+            </div>
+        </div>
+        <div class="calculate">
+            <button onclick="computeBMI()" id="btn" type="button" class="btn btn-primary btn-lg">Compute BMI</button>
+        </div>
+
+        <!-- User input section ends here -->
+
+        <!-- Display content starts from here -->
+
+        <section id="result">
+            <div class="result-body container">
+                <h3>BMI Score</h3>
+                <h1 class="OverallBMI"></h1>
+                <h4 class="BMIValue"></h4>
+                <div class="userInput">
+                    <!-- <p id="displayGender">Gender : </p> -->
+                    <p id="displayAge">Age : </p>
+                    <p id="displayHeight">Height : </p>
+                    <p id="displayWeight">Weight : </p>
+                </div>
+            </div>
+            <div class="defaultContent">
+                <p>BMI Categories</p>
+                <ul>
+                    <li>Underweight =< 18.5</li>
+                    <li>Normal Weight = 18.5-24.9</li>
+                    <li>Overweight = 25-29.9</li>
+                    <li>Obesity = BMI of 30 or greater.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Display content ends here -->
+
+        <div class="secondContent">
+            <p>The BMI calculator for children and teenagers is different than the one for adults. While it uses height
+                and weight, it also uses age and gender. That's because male and female height and weight change during
+                growth and development. For children, BMI is expressed as a percentile as compared to other children of
+                the same age and gender.</p>
+
+            <div class="secondContent1">
+                <h3>Path to improved health</h3>
+                <p>If your BMI shows you're overweight or obese, you can lower your BMI by losing weight. This can be
+                    done by following standard weight-loss tips, such as:</p>
+                <ul>
+                    <li><strong>Eating healthy.</strong> Choose lean meats, fruits, vegetables, and whole
+                        grains. Reduce alcohol, sugar, processed foods, sodas, and juices. Consume fewer calories.</li>
+                    <li><strong>Exercising regularly.</strong> This includes cardio and weight-bearing
+                        exercises to build muscle and lose fat. This is effective in controlling belly fat. Belly fat
+                        increases the risk of certain health conditions. Always talk to your doctor before beginning an
+                        exercise program.</li>
+                    <li><strong>Being mindful of portion control.</strong> Don't overeat during meals and
+                        snacks.</li>
+                </ul>
+            </div>
+            <div class="secondContent2">
+                <h3>Things to consider</h3>
+                <p>If your BMI indicates you're overweight or obese, you may be at risk for certain health conditions.
+                    Those include diabetes, heart disease, arthritis, and certain cancers. BMI can't be used to diagnose
+                    disease. However, it is an important marker that should motivate you to have a discussion with your
+                    doctor about how to lose weight and reduce BMI.</p>
+                <p>These tools should be guides only. Don't rely on them to make decisions about your health or your
+                    child's health. Always talk with your doctor about your health condition(s) and/or circumstances
+                    before making any lifestyle changes.</p>
+            </div>
+        </div>
+        <div class="love">
+            <p>Made with ❤️ in India.</p>
+        </div>
+    </section>
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
