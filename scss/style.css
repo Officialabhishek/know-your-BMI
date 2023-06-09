@@ -234,4 +234,21 @@
 .love {
   text-align: center;
   padding: 3rem 0 2rem 0;
+}
+
+@media (max-width: 400px) {
+  .container .row .content .age input,
+  .container .row .content .height input,
+  .container .row .content .weight input {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .container .row .content .height select,
+  .container .row .content .weight select {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .container .row .image {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
