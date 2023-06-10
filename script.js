@@ -80,3 +80,11 @@ function computeBMI() {
 
     }
 }
+
+function male() {
+    $("img").attr("src", "./svg/man.svg");
+}
+
+function female() {
+    $("img").attr("src", "./svg/woman.svg");
+}
