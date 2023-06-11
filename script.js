@@ -40,7 +40,7 @@ function computeBMI() {
     var category = document.querySelector("h4");
 
 
-    var genNew = document.querySelector("#displayGender");
+    // var genNew = document.querySelector("#displayGender");
     var ageNew = document.querySelector("#displayAge");
     var heightNew = document.querySelector("#displayHeight");
     var weightNew = document.querySelector("#displayWeight");
@@ -74,9 +74,6 @@ function computeBMI() {
         ageNew.innerHTML = "Age : " + age;
         heightNew.innerHTML = "Height : " + inputHeight;
         weightNew.innerHTML = "Weight : " + inputWeight;
-
-        console.log(heightNew.innerHTML
-        );
 
     }
 }

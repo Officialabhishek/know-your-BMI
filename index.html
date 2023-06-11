@@ -56,7 +56,7 @@
                 </div>
                 <div class="age">
                     <h2>Age</h2>
-                    <input type="text" id="age" class="form-control" placeholder="Your age" aria-label="Age">
+                    <input type="number" id="age" class="form-control" min="14" max="70" placeholder="Your age" aria-label="Age">
                 </div>
                 <div class="height">
                     <div class="height-box">
@@ -66,8 +66,8 @@
                             <option disabled>m</option>
                         </select>
                     </div>
-                    <input type="text" id="height" class="input-height form-control" placeholder="Your height"
-                        aria-label="Height">
+                    <input type="number" id="height" class="input-height form-control" placeholder="Your height"
+                        aria-label="Height" required>
                 </div>
                 <div class="weight">
                     <div class="weight-box">
@@ -77,8 +77,8 @@
                             <option selected> in kg</option>
                         </select>
                     </div>
-                    <input type="text" id="weight" class="input-weight form-control" placeholder="Your weight"
-                        aria-label="Weight">
+                    <input type="number" id="weight" class="input-weight form-control" placeholder="Your weight"
+                        aria-label="Weight" required>
                 </div>
             </div>
         </div>
